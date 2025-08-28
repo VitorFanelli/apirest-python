@@ -1,0 +1,28 @@
+GET http://localhost:5000/items
+
+###
+GET http://localhost:5000/items/2
+
+###
+POST http://localhost:5000/items
+Content-Type: application/json
+
+{
+  "description": "teste inclusao",
+  "id": 3,
+  "name": "teste 3"
+}
+
+###
+PUT http://localhost:5000/items/2
+Content-Type: application/json
+
+{
+  "description": "teste inclusao 2",
+  "id": 2,
+  "name": "teste 2"
+}
+
+
+###
+DELETE  http://localhost:5000/items/1
