@@ -1,4 +1,4 @@
-from flask import flask, jsonify, request
+from flask import Flask, jsonify, request
 
 listUsers = [
         {"id": 1, "login": "jose", "password": "123"},

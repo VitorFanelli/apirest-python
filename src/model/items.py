@@ -1,4 +1,4 @@
-from flask import flask, jsonify, request
+from flask import Flask, jsonify, request
 
 items = [
         {"id": 1, "name": "Item A", "description": "Descrição do Item A"},
