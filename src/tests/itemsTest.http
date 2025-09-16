@@ -1,0 +1,34 @@
+
+@apiurl = http://localhost
+@porta  = 5000
+@endpoint = produtos
+###
+#GET {{apiurl}}/users HTTP/1.1
+GET {{apiurl}}:{{porta}}/{{endpoint}}
+
+###
+GET http://localhost:5000/agenda/2
+
+###
+POST http://localhost:5000/agenda
+Content-Type: application/json
+
+{
+  "celular": "16-88891-1111",
+  "nome": "carlos"
+}
+
+###
+PUT http://localhost:5000/agenda/2
+Content-Type: application/json
+
+
+{
+  "celular": "16-88891-1111",
+  "id": 3,
+  "nome": "Marcos"
+}
+
+
+###
+DELETE  http://localhost:5000/agenda/1
