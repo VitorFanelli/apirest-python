@@ -5,8 +5,9 @@ from flask_cors import CORS
 # from src.model.users import ( get_users)
 # import agenda
 
+from src.model import users
 from src.model import agenda 
-from src.model import users , items
+
 # import users
  #http://192.168.13.191:5000/agenda
  
@@ -18,7 +19,8 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 route_map = {
     'agenda': agenda,
     'users': users,
-    'produtos': items
+    'contacts': contacts,
+    'roles': roles
 }
 
 # autentica o usuario
@@ -51,4 +53,4 @@ def handle_resource(resource, id=None):
 #     return get_users()
 
 if __name__ == '__main__':
-    app.run(debug=True) # debug=True para desenvolvimento
+    app.run(debug=True) 

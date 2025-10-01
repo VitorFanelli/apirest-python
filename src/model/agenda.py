@@ -1,4 +1,4 @@
-from flask import flask, jsonify, request
+from flask import Flask, jsonify, request
 
 # agenda
 # Dados de exemplo (pode ser substituído por um banco de dados)
